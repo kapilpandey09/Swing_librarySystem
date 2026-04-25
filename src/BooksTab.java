@@ -96,7 +96,7 @@ public class BooksTab {
     }
 
     public static void loadBooks(DefaultTableModel model, JLabel statusBar) {
-        model.setRowCount(0); // pehle table saaf karo
+        model.setRowCount(0); 
         try {
             ResultSet rs = DBHelper.conn.createStatement()
                 .executeQuery("SELECT * FROM books ORDER BY id");
