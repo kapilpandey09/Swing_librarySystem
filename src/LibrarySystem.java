@@ -6,6 +6,6 @@ public class LibrarySystem {
 
         DBHelper.createTables();
 
-        MainWindow.show();
+        LoginFrame.show();
     }
 }

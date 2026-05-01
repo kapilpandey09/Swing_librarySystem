@@ -1,10 +1,8 @@
-
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.table.*;
 
 public class UIHelper {
-
 
     public static JButton makeBtn(String text, Color color) {
         JButton btn = new JButton(text);
@@ -18,7 +16,6 @@ public class UIHelper {
         return btn;
     }
 
-
     public static JTable styledTable(DefaultTableModel model) {
         JTable table = new JTable(model);
         table.setRowHeight(28);
@@ -27,7 +24,8 @@ public class UIHelper {
         table.setSelectionBackground(new Color(173, 216, 230));
         table.setGridColor(new Color(210, 225, 240));
 
-        // Table header style
+
+        
         JTableHeader h = table.getTableHeader();
         h.setFont(new Font("SansSerif", Font.BOLD, 13));
         h.setBackground(new Color(70, 130, 180));
@@ -44,6 +42,7 @@ public class UIHelper {
         return l;
     }
 
+ 
     public static JLabel dialogHeader(String text, Color bg) {
         JLabel l = new JLabel("  " + text, SwingConstants.LEFT);
         l.setFont(new Font("SansSerif", Font.BOLD, 16));
@@ -54,6 +53,7 @@ public class UIHelper {
         return l;
     }
 
+ 
     public static void msg(String text) {
         JOptionPane.showMessageDialog(null, text);
     }
